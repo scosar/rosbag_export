@@ -1,0 +1,5 @@
+import rosbag
+bag = rosbag.Bag('/media/scosar/Windows/Users/scosar/Documents/DATASETS/lcas_kitchen_anomaly_positions.bag')
+for topic, msg, t in bag.read_messages(topics=['/people_tracker/positions']):
+    print msg.poses
+bag.close()
