@@ -10,8 +10,11 @@
 #include <ros/ros.h>
 
 // OpenCv
-#include "cv.h"
-#include "highgui.h"
+//#include "cv.h"
+//#include "highgui.h"
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv/cv.hpp>
 
 // For transforming ROS/OpenCV images
 #include <cv_bridge/cv_bridge.h>
